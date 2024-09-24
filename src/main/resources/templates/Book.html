@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>DETALLES DE LIBRO</title>
+    <style>
+        body {
+            background-color: #0f3443;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            border: 2px solid #ffffff;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Detalles del libro</h1>
+    <p>TITULO: <span th:text = "${book.title}"></span></p>
+    <p>AUTOR: <span th:text = "${book.autor}"></span></p>
+    <p>AÑO: <span th:text = "${book.year}"></span></p>
+</div>
+</body>
+</html>
